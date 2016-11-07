@@ -2,13 +2,37 @@
 @import "sass/vars";
 @import "sass/base";
 
-//===================
-//First screen styles
-//===================
-html{ font-size: 62.5%; }
+//====================================//
+//		   First screen styles
+//====================================//
+html{font-size: 62.5%;}
 body{ @include rem(font-size, 1.6rem); }
 
 
+
+
+
+//====================================//
+//		 DEV - DEL after develop
+//====================================//
+.container{
+	border-left: 1px solid #ffc6c6;
+	border-right: 1px solid #ffc6c6;
+}
+
+
+
+//====================================//
+//				HEADER
+//====================================//
+.header{margin-bottom: 30px;}
+
+.header__top_line, .header__nav{
+	width: 100%;
+	padding: 10px 0;
+}
+.header__top_line{background-color: #f6f6f6;}
+.header__nav{background-color: #f1f1f1;}
 
 
 

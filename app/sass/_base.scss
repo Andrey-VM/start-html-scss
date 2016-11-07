@@ -1,22 +1,15 @@
 @import "bourbon";
 @import "vars";
 
-*::-webkit-input-placeholder{
+*::-webkit-input-placeholder,
+*:-moz-placeholder,
+*::-moz-placeholder,
+*:-ms-input-placeholder
+{
 	color: #666;
 	opacity: 1;
 }
-*:-moz-placeholder{
-	color: #666;
-	opacity: 1;
-}
-*::-moz-placeholder{
-	color: #666;
-	opacity: 1;
-}
-*:-ms-input-placeholder{
-	color: #666;
-	opacity: 1;
-}
+
 body input:focus:required:invalid,
 body textarea:focus:required:invalid{
 	color: #666;
@@ -33,4 +26,84 @@ body{
 	line-height: 1.6;
 	font-family: $default-font;
 	overflow-x: hidden;
+}
+
+//====================================//
+//				CONTENT
+//====================================//
+.content__slider{
+	width: 100%;
+	padding: 15px 0;
+	background-color: #eee;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//====================================//
+//				FOOTER
+//====================================//
+.footer__content{
+	width: 100%;
+	padding: 15px 0;
+	background-color: #e7e7e7;
+}
+
+
+
+
+
+
+
+//====================================//
+//			  Down Footer
+//====================================//
+html,
+body {
+	height: 100%;
+}
+//===========
+//No flexbox
+//===========
+.no-flexboxlegacy .wrapper {
+  display: table !important;
+  height: 100%;
+  margin: auto;
+}
+.no-flexboxlegacy .content {
+  display: table-row !important;
+  height: 100%;
+}
+
+//============
+//Has Flexbox
+//============
+.flexbox .wrapper {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	height: 100%;
+}
+.flexbox .content {
+	-webkit-flex: 1 0 auto;
+	-ms-flex: 1 0 auto;
+	flex: 1 0 auto;
+}
+.flexbox .footer {
+	-webkit-flex: 0 0 auto;
+	-ms-flex: 0 0 auto;
+	flex: 0 0 auto;
 }
